@@ -1,0 +1,133 @@
+
+/* Text formatting */
+h1 {
+    font-size: calc(2rem + 1vw);
+    font-family: system-ui;
+    text-align: center;
+    font-style: normal;
+    text-decoration: none;
+} 
+
+h2 {
+    font-size: calc(1.5rem + 0.8vw); 
+    font-family: system-ui;
+    text-align: center;
+    font-style: normal;
+    text-decoration: none;
+} 
+
+h3 {
+    font-size: calc(1.5rem + 0.8vw); 
+    font-family: system-ui;
+    text-align: center;
+    font-style: normal;
+    text-decoration: none;
+    margin-bottom: 4px;
+    margin-top: 0px;
+    color: white;
+    background-color: hsl(0, 0%, 30%);
+} 
+
+h4 {
+    font-size: calc(0.7rem + 0.4vw); 
+    font-family: system-ui;
+    text-align: center;
+    font-style: italic;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+} 
+
+h5 {
+    font-size: calc(0.7rem + 0.4vw); 
+    font-family: system-ui;
+    text-align: center;
+    font-style: italic;
+    text-decoration: none;
+    margin-top: 0px;
+    margin-bottom: 10px;
+} 
+
+body {
+    text-align: center;
+    background-color: hsl(39, 40%, 90%); /*Parchment color*/
+}
+
+p {
+    font-size: 1rem; 
+    font-family: system-ui;
+}
+
+.caption_style {
+    font-family: David;
+    font-size: 0.8rem;
+}
+/* ------------------- */
+
+/* links formatting */
+a {
+    text-decoration: none;
+    color: hsl(0, 59%, 55%);
+}
+
+a:visited{
+    color: hsl(0, 59%, 40%)
+}
+/* ------------------- */
+
+/* images formatting */
+figure {
+    display: inline-block; /* Keeps the figure inline */
+    margin: 5px;            
+    padding: 5px; 
+    text-align: center;    /* Centers the caption below the image */
+    border: 2px solid brown
+}
+
+.img-preview {
+    width: 200px;  
+    height: auto;  
+    cursor: pointer;
+}
+
+.img-preview:hover {
+    transform: scale(1.1);
+}
+  
+.img-full {
+    width: 600px;   
+    height: auto;  
+}
+/* ------------------- */
+
+/* Lists formatting */
+.index_ul {
+    font-size: 1rem; 
+    font-family: system-ui;
+    list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.index_ul li {
+    display: inline;
+}
+/* ------------------- */
+
+/* Header formating */
+header {
+    background-color: hsl(0, 0%, 30%);
+    color: white;
+    padding: 1px;
+    text-align: center;
+}
+/* ------------------- */
+
+/* Footer formating */
+footer {
+    background-color: hsl(0, 0%, 30%);
+    color: white;
+    text-align: center;
+    padding: 1px;
+}
+/* ------------------- */
