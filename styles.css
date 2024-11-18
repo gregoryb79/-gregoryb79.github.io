@@ -62,6 +62,12 @@ p {
     font-family: David;
     font-size: 0.8rem;
 }
+.caption_style_absent {
+    font-family: David;
+    font-size: 0.8rem;
+    color: red;
+    text-decoration:line-through;
+}
 /* ------------------- */
 
 /* links formatting */
@@ -85,8 +91,10 @@ figure {
 }
 
 .img-preview {
-    width: 200px;  
-    height: auto;  
+    max-width: 200px;
+    max-height: 200px;  
+    height: auto;
+    width: auto;
     cursor: pointer;
 }
 
