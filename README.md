@@ -1,2 +1,2 @@
 "# Land of Israel Banknotes" 
-"# -gregoryb79.github.io" 
+"# gregoryb79.github.io" 
