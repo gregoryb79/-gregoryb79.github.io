@@ -1,7 +1,12 @@
+:root{
+    --basic_text_size: 1rem;
+    --basic_vw_factor: 1vw;
+}
 
 /* Text formatting */
 h1 {
-    font-size: calc(2rem + 1vw);
+    font-size: calc(2*var(--basic_text_size) + var(--basic_vw_factor));
+    /* font-size:  */
     font-family: system-ui;
     text-align: center;
     font-style: normal;
@@ -9,7 +14,7 @@ h1 {
 } 
 
 h2 {
-    font-size: calc(1.5rem + 0.8vw); 
+    font-size: calc(1.5*var(--basic_text_size) + 0.8*var(--basic_vw_factor)); 
     font-family: system-ui;
     text-align: center;
     font-style: normal;
@@ -17,7 +22,8 @@ h2 {
 } 
 
 h3 {
-    font-size: calc(1.5rem + 0.8vw); 
+    font-size: calc(1.5*var(--basic_text_size) + 0.8*var(--basic_vw_factor)); 
+    font-family: system-ui; 
     font-family: system-ui;
     text-align: center;
     font-style: normal;
@@ -29,7 +35,7 @@ h3 {
 } 
 
 h4 {
-    font-size: calc(0.7rem + 0.4vw); 
+    font-size: calc(0.7*var(--basic_text_size) + 0.4*var(--basic_vw_factor));
     font-family: system-ui;
     text-align: center;
     font-style: italic;
@@ -39,7 +45,7 @@ h4 {
 } 
 
 h5 {
-    font-size: calc(0.7rem + 0.4vw); 
+    font-size: calc(0.7*var(--basic_text_size) + 0.4*var(--basic_vw_factor)); 
     font-family: system-ui;
     text-align: center;
     font-style: italic;
@@ -54,17 +60,29 @@ body {
 }
 
 p {
-    font-size: 1rem; 
+    font-size:var(--basic_text_size); 
     font-family: system-ui;
+}
+
+.notations{
+    font-size:var(--basic_text_size); 
+    font-family: system-ui;
+    text-align: left;
+}
+
+.copyright_notice{
+    font-size: calc(0.8*var(--basic_text_size)); 
+    font-family: system-ui;
+    text-align: left;
 }
 
 .caption_style {
     font-family: David;
-    font-size: 0.8rem;
+    font-size: calc(0.8*var(--basic_text_size));
 }
 .caption_style_absent {
     font-family: David;
-    font-size: 0.8rem;
+    font-size: calc(0.8*var(--basic_text_size));
     color: red;
     text-decoration:line-through;
 }
@@ -105,12 +123,24 @@ figure {
 .img-full {
     width: 600px;   
     height: auto;  
+    cursor: zoom-in;
 }
+
+.img-full:hover{
+    /* transform: scale(3);
+    transform-origin: center center;
+    max-width: 100%; */
+    max-width: 100%;
+    transition: transform 0.3s ease, transform-origin 0.3s ease;
+    transform-origin: 50% 50%;
+    transform: scale(2);
+}
+
 /* ------------------- */
 
 /* Lists formatting */
 .index_ul {
-    font-size: 1rem; 
+    font-size: var(--basic_text_size); 
     font-family: system-ui;
     list-style-type: none;
     margin-top: 0;
@@ -119,6 +149,18 @@ figure {
 
 .index_ul li {
     display: inline;
+}
+
+.show_ul{
+    font-size: var(--basic_text_size); 
+    font-family: system-ui;
+    list-style-type: none;
+}
+
+.show_ul li {
+    /* display: inline; */
+    margin-top: 010px;
+    margin-bottom: 010px;
 }
 /* ------------------- */
 
