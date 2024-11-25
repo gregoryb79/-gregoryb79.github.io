@@ -1,0 +1,167 @@
+:root{
+    --basic_text_size: 1rem;
+    --basic_vw_factor: 1vw;
+}
+
+/* Text formatting */
+@mixin header-style($style){
+    font-family: system-ui;
+    text-align: center;
+    font-style: $style;
+    text-decoration: none;
+   }
+
+h1 {
+    @include header-style(normal);
+    font-size: calc(2*var(--basic_text_size) + var(--basic_vw_factor));
+} 
+
+h2 {
+    @include header-style(normal);
+    font-size: calc(1.5*var(--basic_text_size) + 0.8*var(--basic_vw_factor)); 
+} 
+
+h3 {
+    font-size: calc(1.5*var(--basic_text_size) + 0.8*var(--basic_vw_factor)); 
+    @include header-style(normal);
+    margin-bottom: 4px;
+    margin-top: 0px;
+    color: white;
+    background-color: hsl(0, 0%, 30%);
+} 
+
+h4 {
+    font-size: calc(0.7*var(--basic_text_size) + 0.4*var(--basic_vw_factor));
+    @include header-style(italic);
+    margin-top: 10px;
+    margin-bottom: 10px;
+} 
+
+h5 {
+    font-size: calc(0.7*var(--basic_text_size) + 0.4*var(--basic_vw_factor)); 
+    @include header-style(italic);
+    margin-top: 0px;
+    margin-bottom: 10px;
+} 
+
+body {
+    text-align: center;
+    background-color: hsl(39, 40%, 90%); /*Parchment color*/
+}
+
+p {
+    font-size:var(--basic_text_size); 
+    font-family: system-ui;
+}
+
+.notations{
+    font-size:var(--basic_text_size); 
+    font-family: system-ui;
+    text-align: left;
+}
+
+.copyright_notice{
+    font-size: calc(0.8*var(--basic_text_size)); 
+    font-family: system-ui;
+    text-align: left;
+}
+
+.caption_style {
+    font-family: David;
+    font-size: calc(0.8*var(--basic_text_size));
+}
+.caption_style_absent {
+    font-family: David;
+    font-size: calc(0.8*var(--basic_text_size));
+    color: red;
+    text-decoration:line-through;
+}
+/* ------------------- */
+
+/* links formatting */
+a {
+    text-decoration: none;
+    color: hsl(0, 59%, 55%);   
+
+    &:visited{
+        color: hsl(0, 59%, 30%)        
+    }
+}
+/* ------------------- */
+
+/* images formatting */
+figure {
+    display: inline-block; /* Keeps the figure inline */
+    margin: 5px;            
+    padding: 5px; 
+    text-align: center;    /* Centers the caption below the image */
+    border: 2px solid hsl(0, 59%, 41%)
+}
+
+.img-preview {
+    max-width: 200px;
+    max-height: 200px;  
+    height: auto;
+    width: auto;
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+  
+.img-full {
+    width: 600px;   
+    height: auto;  
+    cursor: zoom-in;
+
+    &:hover{
+        transition: transform 0.3s ease, transform-origin 0.3s ease;
+        transform: scale(1.25);
+    }
+}
+/* ------------------- */
+
+/* Lists formatting */
+.index_ul {
+    font-size: var(--basic_text_size); 
+    font-family: system-ui;
+    list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    li {
+        display: inline;
+    }
+}
+
+.show_ul{
+    font-size: var(--basic_text_size); 
+    font-family: system-ui;
+    list-style-type: none;
+
+    li {
+        /* display: inline; */
+        margin-top: 010px;
+        margin-bottom: 010px;
+    }
+}
+/* ------------------- */
+
+/* Header formating */
+header {
+    background-color: hsl(0, 0%, 30%);
+    color: white;
+    padding: 1px;
+    text-align: center;
+}
+/* ------------------- */
+
+/* Footer formating */
+footer {
+    background-color: hsl(0, 0%, 30%);
+    color: white;
+    text-align: center;
+    padding: 1px;
+}
+/* ------------------- */

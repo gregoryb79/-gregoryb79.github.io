@@ -1,0 +1,175 @@
+:root {
+  --basic_text_size: 1rem;
+  --basic_vw_factor: 1vw;
+}
+
+/* Text formatting */
+h1 {
+  font-family: system-ui;
+  text-align: center;
+  font-style: normal;
+  text-decoration: none;
+  font-size: calc(2*var(--basic_text_size) + var(--basic_vw_factor));
+}
+
+h2 {
+  font-family: system-ui;
+  text-align: center;
+  font-style: normal;
+  text-decoration: none;
+  font-size: calc(1.5*var(--basic_text_size) + 0.8*var(--basic_vw_factor));
+}
+
+h3 {
+  font-size: calc(1.5*var(--basic_text_size) + 0.8*var(--basic_vw_factor));
+  font-family: system-ui;
+  text-align: center;
+  font-style: normal;
+  text-decoration: none;
+  margin-bottom: 4px;
+  margin-top: 0px;
+  color: white;
+  background-color: #4d4d4d;
+}
+
+h4 {
+  font-size: calc(0.7*var(--basic_text_size) + 0.4*var(--basic_vw_factor));
+  font-family: system-ui;
+  text-align: center;
+  font-style: italic;
+  text-decoration: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+h5 {
+  font-size: calc(0.7*var(--basic_text_size) + 0.4*var(--basic_vw_factor));
+  font-family: system-ui;
+  text-align: center;
+  font-style: italic;
+  text-decoration: none;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+body {
+  text-align: center;
+  background-color: #f0e9db;
+  /*Parchment color*/
+}
+
+p {
+  font-size: var(--basic_text_size);
+  font-family: system-ui;
+}
+
+.notations {
+  font-size: var(--basic_text_size);
+  font-family: system-ui;
+  text-align: left;
+}
+
+.copyright_notice {
+  font-size: calc(0.8*var(--basic_text_size));
+  font-family: system-ui;
+  text-align: left;
+}
+
+.caption_style {
+  font-family: David;
+  font-size: calc(0.8*var(--basic_text_size));
+}
+
+.caption_style_absent {
+  font-family: David;
+  font-size: calc(0.8*var(--basic_text_size));
+  color: red;
+  text-decoration: line-through;
+}
+
+/* ------------------- */
+/* links formatting */
+a {
+  text-decoration: none;
+  color: #d04949;
+}
+a:visited {
+  color: #7a1f1f;
+}
+
+/* ------------------- */
+/* images formatting */
+figure {
+  display: inline-block;
+  /* Keeps the figure inline */
+  margin: 5px;
+  padding: 5px;
+  text-align: center;
+  /* Centers the caption below the image */
+  border: 2px solid #a62b2b;
+}
+
+.img-preview {
+  max-width: 200px;
+  max-height: 200px;
+  height: auto;
+  width: auto;
+  cursor: pointer;
+}
+.img-preview:hover {
+  transform: scale(1.1);
+}
+
+.img-full {
+  width: 600px;
+  height: auto;
+  cursor: zoom-in;
+}
+.img-full:hover {
+  transition: transform 0.3s ease, transform-origin 0.3s ease;
+  transform: scale(1.25);
+}
+
+/* ------------------- */
+/* Lists formatting */
+.index_ul {
+  font-size: var(--basic_text_size);
+  font-family: system-ui;
+  list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.index_ul li {
+  display: inline;
+}
+
+.show_ul {
+  font-size: var(--basic_text_size);
+  font-family: system-ui;
+  list-style-type: none;
+}
+.show_ul li {
+  /* display: inline; */
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* ------------------- */
+/* Header formating */
+header {
+  background-color: #4d4d4d;
+  color: white;
+  padding: 1px;
+  text-align: center;
+}
+
+/* ------------------- */
+/* Footer formating */
+footer {
+  background-color: #4d4d4d;
+  color: white;
+  text-align: center;
+  padding: 1px;
+}
+
+/* ------------------- */
