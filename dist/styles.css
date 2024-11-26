@@ -3,6 +3,42 @@
   --basic_vw_factor: 1vw;
 }
 
+/*Parchment color*/
+.sidebar {
+  width: 10rem;
+  background-color: #f0e9db;
+  font-family: "system-ui";
+  height: 100vh;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: auto;
+  display: flex;
+  border: none;
+}
+.sidebar ul {
+  font-size: var(--basic_text_size);
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.sidebar .caption_style_sidebar {
+  font-family: David;
+  font-size: calc(0.5*var(--basic_text_size));
+}
+
+.footer_iframe {
+  width: 100%;
+  height: auto;
+  border: none;
+}
+
+.main_content {
+  margin-left: 10rem;
+  /* Reserve space for the sidebar */
+}
+
 /* Text formatting */
 h1 {
   font-family: system-ui;
@@ -117,6 +153,15 @@ figure {
   cursor: pointer;
 }
 .img-preview:hover {
+  transform: scale(1.1);
+}
+
+.img-sidebar {
+  height: auto;
+  width: 100px;
+  cursor: pointer;
+}
+.img-sidebar:hover {
   transform: scale(1.1);
 }
 
