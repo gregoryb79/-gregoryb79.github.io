@@ -26,10 +26,15 @@ $font-family: 'system-ui';
         margin: 0;
         padding: 0;
     }
-
+    
     .caption_style_sidebar {
         font-family: David;
         font-size: calc(0.5*var(--basic_text_size));
+    }
+
+    menu{
+        margin: 0;
+        padding: 0;
     }
 }
 //----------------------------------
