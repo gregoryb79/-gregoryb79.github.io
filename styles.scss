@@ -2,6 +2,17 @@
     --basic_text_size: 1rem;
     --basic_vw_factor: 1vw;
 }
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background-color: #f0f0f0;
+    padding: 5px;
+    z-index: 9999;
+    :focus{
+        top: 0;
+    }
+  }
 
 // Sidebar Formatting
 $sidebar-width: 10rem;
@@ -174,15 +185,49 @@ figure {
 }
   
 .img-full {
+    
     width: 600px;   
     height: auto;  
     cursor: zoom-in;
 
     &:hover{
-        transition: transform 0.3s ease, transform-origin 0.3s ease;
-        transform: scale(1.25);
+        transform: scale(1.3);
     }
 }
+
+.magnifier {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    cursor: none;
+  
+    .mag_img {
+      display: block;
+      width: 100%; // Ensure image scales correctly
+    }
+  
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 150px; // Size of magnifying glass
+      height: 150px;
+      border-radius: 50%; // Make it circular
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); // Optional styling
+      background: rgba(255, 255, 255, 0.1); // Glass-like overlay
+      pointer-events: none; // Let clicks pass through
+      clip-path: circle(75px); // Define a circular region
+      transform: scale(2); // Magnify the content
+      transform-origin: center; // Keep the zoom centered
+      background-size: 200%; // Scale the image to simulate zoom
+    }
+  
+    &:hover::before {
+      transform: scale(1.5); // Increase zoom on hover
+    }
+  }
+
 /* ------------------- */
 
 /* Lists formatting */
